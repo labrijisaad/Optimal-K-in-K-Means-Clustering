@@ -62,6 +62,7 @@ init:
 	@echo # Add your environment variables here > "$(ENV_FILE)"
 	@echo # Add files and directories to ignore in version control > "$(GITIGNORE_FILE)"
 	@echo # Add your project dependencies here > "$(REQUIREMENTS_FILE)"
+	@echo jupyterlab >> "$(REQUIREMENTS_FILE)"  # Add jupyterlab as a default requirement
 	@echo ">>>>>> Project structure initialized successfully <<<<<<"
 
 # Setup the virtual environment and install dependencies
@@ -75,18 +76,18 @@ setup:
 
 # Update dependencies in the virtual environment
 update:
-	@$(VENV_ACTIVATE) && pip install -r $(REQUIREMENTS_FILE)
+	@$(VENV_ACTIVATE) && python.exe -m pip install --upgrade pip && pip install -r $(REQUIREMENTS_FILE)
 	@echo ">>>>>> Dependencies updated <<<<<<"
-
-# Clean up the virtual environment and generated files
-clean:
-	@$(DELETE_CMD) $(VENV_NAME)
-	@echo ">>>>>> Cleaned up environment <<<<<<"
 
 # Activate the virtual environment and run Jupyter Lab
 jupyter:
 	@$(VENV_ACTIVATE) && jupyter lab
 	@echo ">>>>>> Jupyter Lab is running <<<<<<"
+
+# Clean up the virtual environment and generated files
+clean:
+	@$(DELETE_CMD) $(VENV_NAME)
+	@echo ">>>>>> Cleaned up environment <<<<<<"
 
 # Display available make targets
 help:

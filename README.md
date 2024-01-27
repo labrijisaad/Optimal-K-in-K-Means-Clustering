@@ -32,4 +32,11 @@ An example is provided in the notebook, illustrating the practical application o
 This notebook serves as a comprehensive guide for anyone looking to understand and apply K-Means clustering more effectively. By employing both the Elbow Method and Silhouette Analysis, it offers a nuanced approach to identifying the optimal number of clusters, ensuring a balance between cluster cohesion and meaningful separation.
 
 ## Connect 🌐
-- 🔗 Feel free to connect with me on [LinkedIn](https://www.linkedin.com/in/labrijisaad/) 
+<div align="center">
+  <a href="https://www.linkedin.com/in/labrijisaad/">
+    <img src="https://img.shields.io/badge/LinkedIn-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" style="margin-bottom: 5px;"/>
+  </a>
+  <a href="https://github.com/labrijisaad">
+    <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" style="margin-bottom: 5px;"/>
+  </a>
+</div>

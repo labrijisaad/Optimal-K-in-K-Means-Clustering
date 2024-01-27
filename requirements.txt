@@ -1,1 +1,5 @@
 # Add your project dependencies here 
+jupyterlab
+matplotlib 
+numpy 
+scikit-learn
